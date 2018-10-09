@@ -45,4 +45,8 @@ class RetrofitFactroy private constructor() {
         return interceptor
     }
 
+    fun <T>create(service:Class<T>){
+        retrofit.create(service)
+    }
+
 }
