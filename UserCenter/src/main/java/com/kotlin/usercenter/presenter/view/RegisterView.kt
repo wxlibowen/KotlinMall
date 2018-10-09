@@ -8,5 +8,5 @@ import com.kotlin.base.presenter.view.BaseView
  *描述:
  */
 interface RegisterView : BaseView {
-
+    fun onRegisterResult(result: Boolean)
 }
