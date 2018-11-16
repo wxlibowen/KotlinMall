@@ -19,11 +19,8 @@ class RegisterPresenter : BasePresenter<RegisterView>() {
 
     fun register(mobile : String,verifyCode : String,pwd : String){
         /*
-                业务逻辑
+           业务逻辑
          */
-
-
-
         val  userService=UserServiceImpl()
         userService.register(mobile,verifyCode,pwd)
                 .execute(object : BaseSubscriber<Boolean>(){
@@ -31,11 +28,6 @@ class RegisterPresenter : BasePresenter<RegisterView>() {
                 mView.onRegisterResult(t)
             }
         })
-
-
-
-
-
 
 
     }

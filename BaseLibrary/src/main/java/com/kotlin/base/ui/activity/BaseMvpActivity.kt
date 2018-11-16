@@ -9,6 +9,7 @@ import com.kotlin.base.presenter.view.BaseView
  *描述:
  */
 open class BaseMvpActivity<T : BasePresenter<*>> : BaseActivity(),BaseView {
+    lateinit var mPresenter: T
 
     override fun showLoading() {
     }
@@ -18,6 +19,6 @@ open class BaseMvpActivity<T : BasePresenter<*>> : BaseActivity(),BaseView {
 
     override fun onError() {
     }
-    lateinit var mPresenter: T
+
 
 }

@@ -11,9 +11,6 @@ import io.reactivex.Observable
  */
 class UserServiceImpl : UserService {
     override fun register(mobile: String, VerifyCode: String, pwd: String): Observable<Boolean> {
-
-
-
         return Observable.just(true)
     }
 
